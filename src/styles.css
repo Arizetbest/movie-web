@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.height{
+    height:'200px'
+  }
+  .mvl{
+      margin-left: 4rem;
+  }

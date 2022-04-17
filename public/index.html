@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film-rental</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="wrapper" class="grid grid-cols-6 gap-10 p-32">
+      <!-- The wrapper div -->
+
+      <div id="leftAside" class="col-span-1 h-96 w-52 mr-5 bg-gray-400">
+        <div>
+            <svg class="w-32 h-5 mt-2 ml-4" width="188" height="48" viewBox="0 0 188 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="188" height="48" fill="url(#pattern0)"/>
+                <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_3_157" transform="translate(0 -1.45833) scale(0.00444444 0.0174074)"/>
+                </pattern>
+                <image id="image0_3_157" width="225" height="225" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABI1BMVEXGf4j///+ZAACZERQAAACRAACYDhHFfIXHf4i9a3P35+ioJSaUAADHgouaAACrNjqjKCjCdHyoMDXEeYGvRUrIgYHh4eHBcXlra2tOT07w8PCCg4KWX2G5XmXS09OyUFZAQUFnWFi0dn2cFxvmxcahPkKIX2ShbHI4NjaMREm9Z2+TREmeHCAZAACqOj9JP0BeSUy3V11hYWF3GRieRUouMTF2dnbesraBAABgCgkpAAB0VFhLAACamprNjpWRkZG9vb0kJSTu1dYaGRnSmZ8iAAC4uLiQY2laEAyWXmBkHh0PExI0KRVZU0zbqq7rztFBLR4RAAAzHRynp6cjFxaNLzKEExVNQy1FGAoYHx8FEhEvAABkKipINDQzGBh8IiNnTlE7Lt0MAAAN9ElEQVR4nO2cDV+bWBbGCRguaEh4q2izeJ3QJgxFElKTuk1ttFbdHXfnZe3M7Ozsi9//U+y5l5dAAM1Mo6G79/m1wUQF/pznnnPuJZHjmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYaixlZW36TH+fJE3+LbIszZC+LFhk8iupHanlqB0Th7aFvhjKVQmXeUU91NAXAfn7CCPMwDY2ffor6DMIgXEnrD/jZxGCdG/TBA/pcwnBq3K9h+NnE/K8Wu8wroGQd8JNU9yndRDy7bDGRl0LId+y64u4HkKer+9YXBehXtvCuC5C3tw0SZXWRti2No1SoUrCeDLRXhnRrGmyqSTU7Vg4DLEZ6Koj3k+raptmKRcySaCarVT0KUjPzf4lZGge1sUIpllQq823a1ox0PG7d+/+NPjzHxJ98+7dN71nz559fPER5X9U4QxbB76WYDxbltjieSxtBuEBoa+35t2b5wuNT6eHuw2ibQUVflwDU7f07cay1GZtCwYQ3p7eZM51fNuNCRsvpGJUkM631CLhDhA69RyIQAjKnOv+1tZ+TPj822IQFauSUKxnvQDC/f0s4Xj/MIlhY/t9EZEzqwhrWhHR1z8cHORcunvmJoSNF8WhpdiVhPXsTdHXfym49K8pYaPEp5rzpREWx+HhgrDEp4ZaRShvAuBBAeHVVc6lZ7cLlzYa3xXzaedLG4db43Eu00CqyRAW8ynSKwiF2hLmXTrOuRR8utzaaH4FYU0bUyCcdnMunU+zLgWfKnmfWlWZJigpLTUQEHbnecJunnApnyoeX0FY0xW3Mpe6B7mzX8qnuKIetr2azi2gpxnnYjjeXyLM+1TzKwj9eiYaWi3OLjJzi72Ds8kSYePNIoiKWdWXBtH+6jMYraghA8LzCbSmqS4m58sxzPhUsdtVhNEEWMNaPcyKsB51IOjV1sXFVnch9/yiQNj4ENlUQSGZAZcS7kQ7NlS9FndqrEA0o7CgVz/cnl1kznV6cFVwKfiUIlpmu5LQjvYswdSjBinH6ohOfEYQw/FeLpfujUsIt99zkoZ36FpUKWEnmYWEoqhbm0b0dFH0Yy8BYaFanBcJG29CXYjX2soIU2sqniiInQ13N5oOJ6HHJ4FeHXVzqxh7p/NPvecFhOdeM1k2LCPE6d4tAbTZRSnJFAW4zLGr0Kvv813bXnf6/es3xSB+0Jv3EJpp1DQfrp+60YmU5xDCpImETJN36d7W1t9eB0WGxrdkUbTSpekdRE0lu8cbLItGAGcgiMmNFBiH+3u5GI7Hn143nxUJU5+WEqZtt0EJ9Q02OLZDCZOBQ6rFQa5anJ19et1qvigibnealblUFxNfIp3s39ngAjgmJwAxlBLCrZubvEtvPr3mm2U+/dhsVRI200vWETeba1AQEWIlJSyMQyBsN7UiYUNuVhPqsU0NGkPxSSeLubcS0kSQi2GZS8ndl7J8ShbvKwiT9WCSSzO5mtzt0B55uV8ObW9xQWU/Jkxz6ZZ7mIvh4WFEWHJ3ovGG+LSCMM6mtB6m9VYxbFNXH/mtGlhwfB0n9cqKYxjE19UoqRaUkG/KFT6tIIyysyJH+48XbTzdEUXnkRdSLV8E+ThykRwTqrGpjB+Purc5l56eRoSlPt02m+0Kwihqit2KYkiuoGHS2qs+ctaJkhv0w/RKJjFMrqv109Fe92b3INW4240I283gQ6lPKwjjPibK1QLJNJDVyJMmrjy3NckWoqHh21KS6kg6jwaifXIELt0/TLR/kbgUgmiV+rScUBBoCYyLhQDjHJnRxRQevYXTYiiRlOG4WqTJDp8cjbs3z3dT7U2nCWGr1Kd6s5xQpGttca52QgXF0UyT2uNJsQUxiSJJPAku/aZ5cnRaWi1oEPUSn76oIqSusJ1omHtKKCQj/vHbG8WMnQljRYnLRdyZSgF1aeZcIZdeEEInIHpf4lPNLyc0jXjiQlO1FZcl4Un6N5QiBii1qUpsKnVOjm4usoTTrQtK2KGfsFBKgrhtFl8khKQAJSMCx1dVFJ+ofTNMMeYKlTjxCCJZTkH6yfe3B+c5lx78HBHSa/OxOBlufCiPISH0Ii7fi3K2KDzdNCpUKSNU4iSb0tbR0E8u3f3s7Gka9zQRISeVJJsSJYSpSUORVqgnmmIopDe1sE8YIYhhYlMo+pK+PA6nW1s3GUJO+W5VQsiZRhQ5xzM6tMvQFGRYsqVpj2ZVpMm2HYbQmVoIyaZKLqsWJ3SBZFMyDqf5nmZ+evPHDGGpTysIFTmpRJ4v6FjW5JC8X0zVdTO0HsOulh3ovkB6NsFRA+xpFrTBTsiFjpDML0gu3Z/mXDqe5gg5tIpPo2oR2wMunW3C0cIObRgjqcHaC78Rkq43SaLwhd8JZYD0koRHe0ezzKU5Qu59ST4tI4QxFyQzJ2TImBxeSAXuCdcaRuR1hOwBIkofLq2UrGQIpDcNoaeZ51w6nS8Roo8l86gCIeRPJVqjIa2TbPpLRyeJ1VzjRFEK/eUDRJBOJ4ThH6e8kFO8k8vu1XnmXLunV0uEq/iUdN5W1E2Qmhtn7iLi2qIoYZo3E+UYBd1GVrTU0EGK9dPlQy7lUFndLxAGSLHFqBYGjpg9oEDGvUNPZ131H2GBZhedSlWdnGFFIZA9mk8dTTFeXk5yc/zu5HCZcAWf7jRFHFsD26q4wIMUZ8bvxIW0JwpruhUektSFbVmLJNvY1LOQohqadGsr6Phyvpt16fxq92KZ8GGf7jQFS6EZzAlSQEgupm0ZiIvfhKt5WF3PfN/2A0/LO16C0pSBFAWVOEcMOCA8P8zeIT2fuIUYcqX9aZ6wpcULGMlEBoaDV8gsGl5HtkGhxxWbJUUxPFryhcVpQA8HhDAO9xZy4WmR8CGf7jR5HYUZd4qq6ZV+xlRbR7KpHM1Is001l3psIJyeZV0KubTo0gd9St5t0umkeD64c1NLwjAYTJU2OvRksHF8uZ+799SFKX8J4QM+JYS8GHcWgf0oLdqKIpM+JEP3FjVUvnW8VC26pS59yKeUkG+S5tDWuI18gh+4DMPQLMuCDSKZxzY7vtDEr/6e72m6e92fX5cQ3j+Pigj5jmwgcEmITSKMaSZ9EjrD8miX70M291UdunDZAGYLd9Qf3y6Nw/nVeVkMOek+n8aELdvCeqbdFh1SL0ry3lrxFORhXRXS7ib6wu9gWYL8av/4djWX3u/TmJAX/aVu+J6suiZBifCXGrfkyGSGyknHb8/dLOH83P1HOeF9+XQnvctf7EejIz1OakUwhSmhWxxaxfLxZXd3kiW83f2lgvAeny4I+dglxSOtn88IO05xApVrx+HI6ttf8jG8mFTF8B6fZgh50g+TES/mp4e+udYaonCavRQ+Mu5VtUOzHE069NviydI4nFeOQ+6efJolVC2EYAZsRzkny4jXdncfkQattTxpwra3KFUSZNcA8o9w8naaW02cz8+qXMpVr0tlCdsdg/wuHMSyAyfPaNpr6NpIC6/7eYeI0GdoS39whdSQMPCbbw9z6zTz/b1Kl8LO35evS2UJ+XY60VXiRLc4E0fHHpTkz+CD5l3PTQdpGxXKFVcOecGvv8Gllfk0R5hBjLJdBpLOWzvm7087it3KXTKK5xnV5Ug6/nWcW8U47d7e49KqfJonzH8WUYlNlWkDPuNPoiiy7qfho38PSDak+8otevnr+PZ8cYP0oDu9l7Bi/XSZUAyz9U8hI8fsqEQ6dDmf98a+tCs0Q1t++FKhl//8179HXy00gqf/afG8Xvkbb7ZjvVhombDVLi5XGBb5S1NreGMGmTwQSSu19igM8Ev8Micc6LpeeWta4t6DFPhnB2aijr6soDafKJVQuVbpsip+dfUdPImiQC+mc0rm1Wi5QIo/3JV8xqv0ackHamshidwYIpkItvAPkbxH3GXF1aXX60kSeYAf7Q0GPSl6keMyW9gAXvJi3WQ5Ii/uYM7QeZFvO7Ki7bQDxMFjdJf/zh31pL7bh1heD1132AegwXBEaeJtb0ReHbkzjpvd9Wf9UX9wN+B6/VmvFlGVxVZH59uescOrQWBq5OMUInCKLZIKJW40mcy42QQIB0P3bua610DmuvTkB+6Qbq8nw94A/sP1uL52B/1+b9iXuLvZhtFiWaJvGA6PDZXHmmWQvyHRamNFE3gSQyCEuA36QMjdTWY9rj+BkCZkyZZ8a0QuAteDuPbgcXbH9e7qEUIgdOyQb8tAKDqCiawdAbdVtCAcztwZEEq9kTuQIJDDQYEQXnAnI7I38gMwbuFxcD2rXtN8UlkCNJEtGIcqv6OrGNltXRPaViaGAxiKhHBICOljIYZgY3iZfEEJydDs96/rAUhiaAo8VoAwlAzEBXzL5/kQjGtD7aCEA3fikhhOrqUIjj5IMWEcxGG0u5iQ6w9ndUmtZByaLVFGKm/KnqU5vKo7fABbLHsySZEDGGaQSyFOo0FvNrmjPANSQOh20IsJo5D1SSqCwkJyTT0ktwUL4udYKt/m2yqGgoHCtuM55KmgQC4lriSZpnc3GQ4nwwHwTCauC2ElwXVJIUl9K/Wur6+BFUpLTfIMeSeRaSiaGcB83zQDbAchTFpN08L0qcJdk6p2PRuQMdkfjfp0lPVB8FJvBhv6LXglySsJWF0AV1Talknps6Vv1bVn+436H8FgYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYvo/1X8B5r2ugjzOa+gAAAAASUVORK5CYII="/>
+                </defs>
+            </svg>   
+        </div>
+        <p class="uppercase pt-5 ml-4">menu</p>
+        <div class="flex ml-4 mt-2">
+            <i class='bx bx-home'></i>
+            <p class="ml-4 text-red-500">Home</p>
+        </div>
+        <div class="flex ml-4 mt-2">
+            <i class='bx bx-building-house'></i>
+            <p class="ml-4">Community</p>
+        </div>
+        <div class="flex ml-4 mt-2">
+            <i class='bx bx-intersect'></i>
+            <p class="ml-4">Discovery</p>
+        </div>
+        <div class="flex ml-4 mt-2">
+            <i class='bx bx-time-five'></i>
+            <p class="ml-4">Coming soon</p>
+        </div>
+
+        <p class="uppercase mt-16 ml-4 ">social</p>
+        <div class="flex ml-4 mt-2 pt-10">
+            <i class='bx bx-group'></i>
+            <p class="ml-4">Friends</p>
+        </div>
+        <div class="flex ml-4 mt-2">
+            <i class='bx bx-at'></i>
+            <p class="ml-4">Media</p>
+        </div>
+
+        <p class="uppercase mt-16 ml-4 ">general</p>
+        <div class="flex ml-4 mt-2 pt-10">
+            <i class='bx bxs-brightness'></i>
+            <p class="ml-4">Setting</p>
+        </div>
+        <div class="flex ml-4 mt-2">
+            <i class='bx bx-log-out-circle' ></i>
+            <p class="ml-4">Logout</p>
+        </div>
+
+        
+
+      </div>
+      <!-- end of leftAside div --> 
+      <div id="center" class="col-span-4">
+        <ul class="flex border-b">
+          <li class="-mb-px mr-1">
+            <a
+              class="inline-block border-l border-t border-r rounded-t py-2 px-4 text-gray-600 font-semibold"
+              href="#"
+              >TV</a
+            >
+          </li>
+          <li class="mr-1">
+            <a
+              class="inline-block py-2 px-4 text-gray-600 hover:text-st-800 font-semibold"
+              href="#"
+              >Series</a
+            >
+          </li>
+          <li class="mr-1">
+            <a
+              class="inline-block py-2 px-4 text-black-500 hover:text-blue-800 font-semibold"
+              href="#"
+              >Movies</a
+            >
+          </li>
+        </ul>
+        <div class="pt-2">
+          <img class="rounded-xl" src="img/2.jpg" alt="nnnn" />
+        </div>
+        <div class="py-4"><p>Latest Movies</p></div>
+
+        <div class="grid grid-cols-4 gap-10">
+          <figure>
+            <img class="height" src="img/9.jpg" alt="third-image" />
+            <figcaption>
+              <p>+ 12 Movies &nbsp; 7.5</p>
+              <p>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="height" src="img/9.jpg" alt="third-image" />
+            <figcaption>
+              <p>+ 12 Movies &nbsp; 8.2</p>
+              <p>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="height" src="img/9.jpg" alt="third-image" />
+            <figcaption>
+              <p>+ 12 Movies &nbsp;10.2</p>
+              <p>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="height" src="img/9.jpg" alt="third-image" />
+            <figcaption>
+              <p>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+              </p>
+              <p>+ 12 Movies &nbsp; 100</p>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- end of first grid-cols-4 line -->
+
+        <div class="py-4"><p>HOLLYWOOD MOVIIES</p></div>
+
+            <!-- begining of second div -->
+        <div class="grid grid-cols-4 gap-10">
+          <figure>
+            <img class="height" src="img/9.jpg" alt="third-image" />
+            <figcaption>
+              <p>+ 12 Movies &nbsp; 7.5</p>
+              <p>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="height" src="img/9.jpg" alt="third-image" />
+            <figcaption>
+              <p>+ 12 Movies &nbsp; 7.5</p>
+              <p>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="height" src="img/9.jpg" alt="third-image" />
+            <figcaption>
+              <p>+ 12 Movies &nbsp; 7.5</p>
+              <p>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="height" src="img/9.jpg" alt="third-image" />
+            <figcaption>
+              <p>+ 12 Movies &nbsp; 7.5</p>
+              <p>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+                <i class="bx bxs-star text-yellow-500"></i>
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      <div id="rightAside" class="col-span-1">right Aside</div>
+    </div>
+  </body>
+</html>
